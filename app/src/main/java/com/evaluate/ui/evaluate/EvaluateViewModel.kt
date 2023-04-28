@@ -1,4 +1,4 @@
-package com.evaluate.ui.dashboard
+package com.evaluate.ui.evaluate
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData

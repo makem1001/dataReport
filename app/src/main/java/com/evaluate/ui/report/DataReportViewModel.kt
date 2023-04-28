@@ -1,4 +1,4 @@
-package com.evaluate.ui.notifications
+package com.evaluate.ui.report
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData

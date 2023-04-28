@@ -1,4 +1,4 @@
-package com.evaluate.ui.home
+package com.evaluate.ui.history
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData

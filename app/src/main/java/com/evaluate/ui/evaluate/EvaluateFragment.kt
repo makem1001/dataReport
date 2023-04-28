@@ -1,4 +1,4 @@
-package com.evaluate.ui.dashboard
+package com.evaluate.ui.evaluate
 
 import android.os.Bundle
 import android.view.LayoutInflater

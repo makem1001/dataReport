@@ -1,4 +1,4 @@
-package com.evaluate.ui.home
+package com.evaluate.ui.report
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.support.v4.app.Fragment
 import android.arch.lifecycle.ViewModelProvider
-import com.evaluate.databinding.FragmentHistoryBinding
+import com.evaluate.databinding.FragmentDataReportBinding
 
-class HistoryRecordFragment : Fragment() {
+class DataReportFragment : Fragment() {
 
-    private var _binding: FragmentHistoryBinding? = null
+    private var _binding: FragmentDataReportBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class HistoryRecordFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-                ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(HistoryRecordModel::class.java)
+        val notificationsViewModel =
+                ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(DataReportViewModel::class.java)
 
-        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
+        _binding = FragmentDataReportBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textNotifications
+        notificationsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

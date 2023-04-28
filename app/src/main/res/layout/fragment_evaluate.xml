@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.EvaluateFragment">
+    tools:context=".ui.evaluate.EvaluateFragment">
     <include layout="@layout/evaluate_title_layout"
         android:id="@+id/evaluate_title_layout"
         android:layout_width="match_parent"
