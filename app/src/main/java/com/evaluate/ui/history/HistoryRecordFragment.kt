@@ -22,6 +22,8 @@ class HistoryRecordFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
+
+        //test
         val homeViewModel =
                 ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(HistoryRecordModel::class.java)
 
